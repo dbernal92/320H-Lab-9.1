@@ -1,7 +1,5 @@
+function Button({ label, onClick, disabled }) {
+  return <button onClick={onClick} disabled={disabled}>{label}</button>;
+}
 
-
-function Button() {
-    return <button>Add</button>;
-  }
-
-  export default Button
+export default Button;

@@ -1,7 +1,7 @@
 import Checkbox from "./CheckBox";
 import Button from "./Button";
 
-function ToDoListItem() {
+function ToDoListItem({ todo, index, dispatch }) {
     return (
         <div>
             <Checkbox 

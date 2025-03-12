@@ -2,14 +2,17 @@ import { useState } from "react";
 import Button from "./Button";
 
 function Form({ dispatch }) {
+    console.log("Form received dispatch:", dispatch);
     const [inputValue, setInputValue] = useState(""); // Track input
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (!inputValue.trim()) return; // Prevent empty todos
-
-        dispatch({ type: "ADD_TODO", text: inputValue }); // Send to reducer
-        setInputValue(""); // Clear input after adding
+        if (!inputValue.trim()) return;  
+    
+        console.log("Dispatching ADD_TODO with text:", inputValue); // Debugging
+        dispatch({ type: "ADD_TODO", text: inputValue }); 
+    
+        setInputValue(""); 
     };
 
     return (
