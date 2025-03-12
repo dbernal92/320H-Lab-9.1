@@ -1,11 +1,11 @@
-import Form from "./Form"
+import Form from "./Form";
 
-function AddToDo() {
+function AddToDo({ dispatch }) {
     return (
         <div>
-            <Form />
+            <Form dispatch={dispatch} />
         </div>
-    )
+    );
 }
 
-export default AddToDo
+export default AddToDo;
