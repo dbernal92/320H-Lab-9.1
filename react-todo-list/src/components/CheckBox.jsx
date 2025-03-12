@@ -1,11 +1,9 @@
-
-
-function Checkbox() {
+function Checkbox({ checked, onChange }) {
     return (
         <div>
-            <input type="checkbox" />
+            <input type="checkbox" checked={checked} onChange={onChange} />
         </div>
-    )
+    );
 }
 
-export default Checkbox
+export default Checkbox;
