@@ -1,0 +1,168 @@
+/* ========== IMPORT FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ========== GENERAL STYLES ========== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* ========== HEADER ========== */
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* ========== FORM STYLING ========== */
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Style the task input field */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+/* ========== BUTTON STYLES ========== */
+.button {
+    background-color: #5a67d8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #434190;
+}
+
+/* ========== TODO LIST STYLES ========== */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 350px;
+    text-align: left;
+}
+
+.todo-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* ========== CHECKBOX STYLING ========== */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+/* ========== DELETE & EDIT BUTTON STYLES ========== */
+.delete-button {
+    background-color: #e53e3e;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background-color: #c53030;
+}
+
+.delete-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.edit-button {
+    background-color: #f6ad55;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-button:hover {
+    background-color: #dd6b20;
+}
+
+/* ========== EDIT MODE INPUT ========== */
+.edit-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* ========== DARK MODE ========== */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode .todo-item {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input[type="text"], 
+.dark-mode .edit-input {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+/* ========== DARK MODE TOGGLE BUTTON ========== */
+#dark-mode-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #666;
+}
